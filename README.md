@@ -1,7 +1,7 @@
 # Glued
 Glued is an online ERP system developed specifically for NGOs and communities. It has been implemented in PHP as a working prototype and is now in a state, where further work gets problematic due to many dirty hacks done along the way. The current main todo item  is to reimplement Glued from scratch as a set of interconnected microservices/blackboxes.
 
-
+With your participation, Glued can become one of the most important assets helping charities world wide. If you ever wanted to hack for a cause, this is your moment!
 
 ## Features
 
@@ -59,3 +59,22 @@ To speed up work, each of the services will be allowed a different paradigm (i.e
  - Internationalization /  translations
  - Packaging as a docker container for SaaS applications
 
+## Call to action
+
+We are looking for
+
+ - developers
+ - software architects
+ - tree maintainers and release managers
+ - UX designers
+ - frontend ninjas
+
+to help us kickstart the rewrite. This is your chance to get involved in a game changing open source project from its very first moment. 
+
+Initial meetup in Brno, Industra: vote for the best time/date http://doodle.com/poll/538xdqyn82xb5f7v
+
+## Why Glued
+
+Glued has been developed with the aim to offer NGOs a state-of-the-art tool to manage their operations. Glued goal is to provide a userfriendly tool that will take lots of operational overhead from NGOs and allow them to focus on what they do best: doing the right thing.
+
+Glued was prototyped and tested on a real-wold NGO. No NGO has been harmed in the process.
