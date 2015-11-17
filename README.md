@@ -36,17 +36,26 @@ Glued is an online ERP system developed specifically for NGOs and communities. I
 
 - microservices architecture (glued implemented as a set of interconnected blackboxes communicating over APIs)
 - base implementation consisting of
-  - glued master service (keeps track of available/connected services)
+  - glued master service (keeps track of available/connected services, turns on/off debugging, performance tracking ...)
   - glued common libraries (common functions, caching, authorisation, url routing, interservice communication - rest api + zeromq api)
   - authentication service
   - notification service
   - file server service
-- functional services (ticketing system, calendar system, contacts database ...)
+  - reference / hello world functional service
+- functional services (ticketing system, cms, calendar system, contacts database ...)
+- mashup service (an ubercms component allowing mashups of functional services on a single url)
 
-To speed up the work, each of the services will be allowed a different paradigm, even a different programming language as long as each service has a language agnostic API (https rest api + high performance sasl zeromq api).
+To speed up work, each of the services will be allowed a different paradigm (i.e. functional programming vs. oop), even a different programming language as long as each service has a language agnostic versioned API (https rest api + high performance sasl zeromq api) and has a unit test. The aim here is to be able to write a component from scratch where needed while not having to reinvent the wheel everytime. Using non-exotic runtime dependencies is encouraged.
 
 ## TODO
 
- - Import usable
- - Licensing decisions
- - 
+ - Decide architectural aspects relevant to microservice reimplementation (what to keep centralized and what to break up between services)
+ - Have the base reimplementation up and running
+ - UX rehaul of functional services
+ - Import usable code from functional services
+ - Setup CI
+ - Licensing decisions (most permissive opensource license while respecting other code used)
+ - Packaging
+ - Internationalization /  translations
+ - Packaging as a docker container for SaaS applications
+
